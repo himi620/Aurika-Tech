@@ -1,0 +1,17 @@
+{
+  "name": "invoice-generator",
+  "version": "1.0.0",
+  "description": "A MERN stack application to generate invoices.",
+  "main": "server.js",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd api && npm start",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd api && npm install && cd ../client && npm install"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
